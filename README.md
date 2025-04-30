@@ -9,7 +9,7 @@ This is a creative AI-powered web game where the player submits a move like "roc
 - Internet connection (for Groq API)
 
 ### ⚙️ 1. Clone the Repository
-```bash
+
 git clone https://github.com/yourusername/gen_ai_game.git
 cd gen_ai_game
 📁 2. Configure Environment
