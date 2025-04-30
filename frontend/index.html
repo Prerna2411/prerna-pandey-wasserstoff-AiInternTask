@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Beats Rock Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Simple styling to center everything */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            margin: 20px 0;
+        }
+        #gameArea, #result {
+            display: none;
+        }
+        #score {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        #history {
+            margin-top: 20px;
+        }
+        .emoji-feedback {
+            font-size: 50px;
+        }
+        /* Simple animation for confetti */
+        @keyframes confetti {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+        .confetti {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            animation: confetti 1s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What Beats Rock Game</h1>
+
+        <!-- Start game button -->
+        <button id="startGameBtn" onclick="startGame()">Start Game</button>
+
+        <!-- Game Area (user input for guesses) -->
+        <div id="gameArea">
+            <h2>Guess what beats Rock</h2>
+            <input type="text" id="guessInput" placeholder="Type your guess..." oninput="updateGuess()">
+            <button onclick="submitGuess()">Submit Guess</button>
+            <div id="score"></div>
+            <div id="history"></div>
+            <div class="emoji-feedback" id="emojiFeedback"></div>
+        </div>
+
+        <!-- Result Area (for displaying win, game over, etc.) -->
+        <div id="result">
+            <h3>Result: <span id="gameResult"></span></h3>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Confetti for feedback on correct answer -->
+    <div id="confetti" class="confetti">🎉</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+

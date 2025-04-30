@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]        # Includes live reload and better performance tools
+redis                    # For Redis cache integration
+sqlalchemy               # ORM for PostgreSQL
+psycopg2-binary          # PostgreSQL adapter
+python-dotenv            # To read .env files
+httpx                    # To call GenAI REST endpoints
+asyncpg
+
+
+
+
