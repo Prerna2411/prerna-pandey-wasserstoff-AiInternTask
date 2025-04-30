@@ -10,7 +10,7 @@ This is a creative AI-powered web game where the player submits a move like "roc
 
 ### ⚙️ Clone the Repository
 
-git clone https://github.com/yourusername/gen_ai_game.git
+git clone https://github.com/Prerna2411/prerna-pandey-wasserstoff-AiInternTask/tree/main
 cd gen_ai_game
 
 
